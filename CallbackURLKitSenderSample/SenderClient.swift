@@ -17,7 +17,7 @@ class SenderClient: Client {
     
     public init() {
         super.init(urlScheme: receiverName)
-    }
+    } 
     
     public func open(text: String, labelReceivedResult: UILabel) {
         do {
