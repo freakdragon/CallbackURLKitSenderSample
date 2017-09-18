@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lv7-BS-bs7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="JlX-Pb-GfQ">
+            <objects>
+                <viewController id="Lv7-BS-bs7" customClass="StartViewController" customModule="CallbackURLKitSenderSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Xu-Ry-LdB"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCo-7Z-ZAh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XB7-e2-EDJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzP-yz-fCm">
+                                <rect key="frame" x="125" y="318" width="124" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43529411759999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Go to main ViewController">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonSendTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scm-xR-hxY"/>
+                                    <action selector="buttonToMainViewController:" destination="Lv7-BS-bs7" eventType="touchUpInside" id="9GP-ct-fGw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sender" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65l-eI-yev">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HCo-7Z-ZAh" firstAttribute="top" secondItem="65l-eI-yev" secondAttribute="bottom" id="7cC-qF-0kq"/>
+                            <constraint firstItem="65l-eI-yev" firstAttribute="leading" secondItem="XB7-e2-EDJ" secondAttribute="leading" id="J2U-wL-i8s"/>
+                            <constraint firstItem="XzP-yz-fCm" firstAttribute="centerX" secondItem="XB7-e2-EDJ" secondAttribute="centerX" id="a72-XJ-sU0"/>
+                            <constraint firstItem="XzP-yz-fCm" firstAttribute="centerY" secondItem="XB7-e2-EDJ" secondAttribute="centerY" id="kvS-Za-Q1t"/>
+                            <constraint firstAttribute="trailing" secondItem="65l-eI-yev" secondAttribute="trailing" id="ovE-gh-Yzd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMainViewController" id="bM6-53-Tra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJj-BO-kxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-615" y="123"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CallbackURLKitSenderSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text for send from sender" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-HU-nGo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.46082338140000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSY-oS-Kxf">
+                                <rect key="frame" x="125" y="58" width="124" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43529411759999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonSendTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6r-Ut-mJh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skA-kO-2U2">
+                                <rect key="frame" x="0.0" y="96" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sender" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiI-3g-eOz">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OSY-oS-Kxf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="02i-bI-MI8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AiI-3g-eOz" secondAttribute="bottom" id="2su-k6-R9v"/>
+                            <constraint firstAttribute="trailing" secondItem="skA-kO-2U2" secondAttribute="trailing" id="3D0-Gt-vpY"/>
+                            <constraint firstItem="skA-kO-2U2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gpa-0a-gzr"/>
+                            <constraint firstItem="AiI-3g-eOz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NmA-br-bgV"/>
+                            <constraint firstAttribute="trailing" secondItem="AiI-3g-eOz" secondAttribute="trailing" id="U7Y-z8-kNJ"/>
+                            <constraint firstAttribute="trailing" secondItem="QAh-HU-nGo" secondAttribute="trailing" id="dcG-1S-oKm"/>
+                            <constraint firstItem="QAh-HU-nGo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="px3-x2-Fh1"/>
+                            <constraint firstItem="skA-kO-2U2" firstAttribute="top" secondItem="OSY-oS-Kxf" secondAttribute="bottom" constant="8" id="qTA-XH-0x7"/>
+                            <constraint firstItem="QAh-HU-nGo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="wLn-qw-Lhh"/>
+                            <constraint firstItem="OSY-oS-Kxf" firstAttribute="top" secondItem="QAh-HU-nGo" secondAttribute="bottom" constant="8" id="yt4-lE-EAW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelReceivedResult" destination="skA-kO-2U2" id="0uj-Vg-ay7"/>
+                        <outlet property="textfieldSendText" destination="QAh-HU-nGo" id="Uvw-eU-b1u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>

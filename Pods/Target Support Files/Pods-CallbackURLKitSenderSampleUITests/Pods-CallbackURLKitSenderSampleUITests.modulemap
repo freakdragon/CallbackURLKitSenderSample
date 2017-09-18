@@ -1,0 +1,6 @@
+framework module Pods_CallbackURLKitSenderSampleUITests {
+  umbrella header "Pods-CallbackURLKitSenderSampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

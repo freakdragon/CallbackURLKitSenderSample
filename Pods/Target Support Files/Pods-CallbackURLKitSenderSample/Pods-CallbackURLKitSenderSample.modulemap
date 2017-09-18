@@ -1,0 +1,6 @@
+framework module Pods_CallbackURLKitSenderSample {
+  umbrella header "Pods-CallbackURLKitSenderSample-umbrella.h"
+
+  export *
+  module * { export * }
+}
