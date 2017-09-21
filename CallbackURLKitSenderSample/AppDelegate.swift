@@ -3,7 +3,7 @@
 //  InteractiveSenderTest
 //
 //  Created by Admin on 07.07.17.
-//  Copyright © 2017 LAN-Optic, LLC. All rights reserved.
+//  Copyright © 2017 freakdragon. All rights reserved.
 //
 
 import UIKit
