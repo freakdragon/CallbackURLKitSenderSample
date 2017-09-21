@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  CallbackURLKitSenderSample
 /*
 The MIT License (MIT)
