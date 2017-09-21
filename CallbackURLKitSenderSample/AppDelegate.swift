@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  InteractiveSenderTest
+//  CallbackURLKitSenderSample
 //
-//  Created by Admin on 07.07.17.
+//  Created by freakdragon on 07.07.17.
 //  Copyright © 2017 freakdragon. All rights reserved.
 //
 
